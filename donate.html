@@ -1,68 +1,81 @@
-<!doctype html>
-<html lang="en_US">
-  <head>
-        <title>Fairshake | Donate</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="robots" content="noindex">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
-    <link rel="shortcut icon" type="image/x-icon" href="https://images.squarespace-cdn.com/content/v1/6509e8800edad97701d0f24a/9c0cb3da-7c69-41be-9df5-3dcfc0f412d9/favicon.ico?format=100w"/>
-    <script>window.SQUARESPACE_ROLLUPS = window.SQUARESPACE_ROLLUPS || {};</script>
-
-    <link rel="stylesheet" type="text/css" href="//assets.squarespace.com/universal/fonts/squarespace-clarkson-v2.css" />
-
-
-    <style id="checkout-page-styles">
-        
-/*! Squarespace LESS Compiler  (less.js language v1.3.3)  */
-#sqs-standard-checkout {
-  background: #213650;
-}
-#store-logo .site-title,
-#sqs-standard-checkout .checkout-tweak-site-title-color {
-  color: #313131;
-}
-#sqs-standard-checkout .button {
-  background: #ff525a;
-}
-.checkout-tweak-background-color {
-  background: #213650;
-}
-.checkout-tweak-header-color {
-  background: #fff;
-}
-.checkout-tweak-header-border {
-  border-bottom: 1px solid rgba(33, 54, 80, 0);
-}
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Now</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+        .donation-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .donation-form input, .donation-form button {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .donation-form button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .donation-form button:hover {
+            background-color: #218838;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+        }
     </style>
+</head>
+<body>
 
-    <!-- Bootstrap data -->
-    <script type="application/json" id="bootstrap">
-        {
-                "context": {"env":"PRODUCTION"},
-                "checkoutBaseContext": {"siteTitle":"Fairshake","websiteId":"6509e8800edad97701d0f24a","baseUrl":"https://www.fairshakepac.com","authenticUrl":"https://www.fairshakepac.com","logoImageUrl":"//images.squarespace-cdn.com/content/v1/6509e8800edad97701d0f24a/d80205c4-2219-452f-adf3-c096dc43acf1/Fairshake-logo-2400px.png","selectedCurrency":"USD","staticAssetBaseUrl":"https://assets.squarespace.com","stripeAccountCountry":"US","stripeTestPublicApiKey":"pk_test_51NsbV0HTpZvPAMz5lU51qqWRYsrnowOIfPJQUMPaw4iC2tgTfFp4AM96Cz5jKWke1sg40FtAzIEuuLOM49jeFO1M00Zisqos9a","stripeLivePublicApiKey":"pk_live_51NsbV0HTpZvPAMz5R70u1cZh2JKGyuceh8t8UNUY0WzvdNVCHsw8YG0tsm7kY5qXj7J4kUPH6VNfENThSs0gXppO00DVz2m4jE","stripeUserId":"acct_1NsbV0HTpZvPAMz5","locale":"en-US","shopperLanguage":"en","reCaptchaSiteKey":"6LcUJrMZAAAAAN-oV3MnMXbC39R8loMNBQ3PX-dY","scriptRegistrationsEnabled":false,"siftJSBeaconKey":"ac301fa5ab"},
-                "customCheckoutForm": {"id":"650a7c3d17d5eb3d0ba72513","name":"","items":[{"id":"text-040c2e2c-b767-4ce9-8c3f-2c9fd204f740","type":"text","title":"Employer","description":"","placeholder":"","required":true,"maxLength":0},{"id":"text-5d4cd08c-6bac-4624-9fb1-b4d3d5ca99f5","type":"text","title":"Occupation","description":"","placeholder":"","required":true,"maxLength":0},{"id":"checkbox-8c40a550-cc8c-4536-a438-ffef24058345","type":"checkbox","title":"Eligibility","description":"1. I am a U.S. citizen or lawfully admitted permanent resident (i.e., green card holder).\n\n2. This contribution is made from my own funds, and funds are not being provided to me by another person or entity for the purpose of making this contribution.\n\n3. I am at least eighteen years old.\n\n4. I am not a federal contractor.\n\nYour contribution (and/or payment of this credit charge) must come from your own personal funds, and not from funds provided by any other person or from any entity. Federal contractors and foreign nationals may not contribute to Fairshake.","options":[{"label":"I affirm the contribution rules."}],"required":true}]},
-                "checkoutUserProfile": {"addressBook":{"addresses":[]},"sessionStatus":"UNAUTHENTICATED","wallet":{"paymentCards":[]}},
-                "donatePage": {"id":"650a7c3d17d5eb3d0ba72514","websiteId":"6509e8800edad97701d0f24a","title":"Contribute to Fairshake","description":"","buttonLabel":"Donate","buttonAlignment":"center","suggestedContributions":[{"label":"","amountCents":1000},{"label":"","amountCents":5000},{"label":"","amountCents":10000},{"label":"","amountCents":25000}],"customForm":{"id":"650a7c3d17d5eb3d0ba72513","websiteId":"6509e8800edad97701d0f24a","type":3,"name":"","fields":["{\"required\":true,\"locked\":false,\"description\":\"\",\"id\":\"text-040c2e2c-b767-4ce9-8c3f-2c9fd204f740\",\"text\":true,\"type\":\"text\",\"placeholder\":\"\",\"title\":\"Employer\"}","{\"required\":true,\"locked\":false,\"description\":\"\",\"id\":\"text-5d4cd08c-6bac-4624-9fb1-b4d3d5ca99f5\",\"text\":true,\"type\":\"text\",\"placeholder\":\"\",\"title\":\"Occupation\"}","{\"required\":true,\"locked\":false,\"description\":\"1. I am a U.S. citizen or lawfully admitted permanent resident (i.e., green card holder).\\n\\n2. This contribution is made from my own funds, and funds are not being provided to me by another person or entity for the purpose of making this contribution.\\n\\n3. I am at least eighteen years old.\\n\\n4. I am not a federal contractor.\\n\\nYour contribution (and/or payment of this credit charge) must come from your own personal funds, and not from funds provided by any other person or from any entity. Federal contractors and foreign nationals may not contribute to Fairshake.\",\"id\":\"checkbox-8c40a550-cc8c-4536-a438-ffef24058345\",\"checkbox\":true,\"type\":\"checkbox\",\"options\":[\"I affirm the contribution rules.\"],\"title\":\"Eligibility\"}"],"parsedFields":[],"connectedBackends":[],"captchaEnabled":false,"possiblyOrphan":false},"customFormId":"650a7c3d17d5eb3d0ba72513","queuedSubmitEnabled":false,"customConfirmationPageUrl":""},
-                "donationSuggestions": [{"label":"","amount":{"currency":"USD","value":"10.00"}},{"label":"","amount":{"currency":"USD","value":"50.00"}},{"label":"","amount":{"currency":"USD","value":"100.00"}},{"label":"","amount":{"currency":"USD","value":"250.00"}}],
-                "checkoutConfig": {"accountRequired":false,"afterpayRedirectEnabled":false,"billingAddressFormConfig":{"defaultCountry":"US","supportedCountries":["AF","AX","AL","DZ","AS","AD","AO","AI","AQ","AG","AR","AM","AW","AU","AT","AZ","BS","BH","BD","BB","BY","BE","BZ","BJ","BM","BT","BO","BA","BW","BV","BR","IO","BN","BG","BF","BI","BQ","KH","CM","CA","CV","KY","CF","TD","CL","CN","CX","CC","CO","KM","CG","CD","CK","CR","CI","CW","HR","CU","CY","CZ","DK","DJ","DM","DO","EC","EG","SV","GQ","ER","EE","ET","FK","FO","FJ","FI","FR","GF","PF","TF","GA","GM","GE","DE","GH","GI","GR","GL","GD","GP","GU","GT","GG","GN","GW","GY","HT","HM","VA","HN","HK","HU","IS","IN","ID","IR","IQ","IE","IM","IL","IT","JM","JP","JE","JO","KZ","KE","KI","XK","KP","KR","KW","KG","LA","LV","LB","LS","LR","LY","LI","LT","LU","MO","MF","MK","MG","MW","MY","MV","ML","MT","MH","MQ","MR","MU","YT","MX","FM","MD","MC","MN","ME","MS","MA","MZ","MM","NA","NR","NP","NL","AN","NC","NZ","NI","NE","NG","NU","NF","MP","NO","OM","PK","PW","PS","PA","PG","PY","PE","PH","PN","PL","PT","PR","QA","RE","RO","RU","RW","BL","SH","KN","LC","PM","VC","WS","SM","ST","SA","SN","RS","SC","SL","SG","SK","SI","SB","SO","SX","ZA","GS","ES","LK","SD","SR","SJ","SS","SZ","SY","SE","CH","TW","TJ","TZ","TH","TL","TG","TK","TO","TT","TN","TR","TM","TC","TV","UG","UA","AE","GB","US","UM","UY","UZ","VU","VE","VN","VG","VI","WF","EH","YE","ZM","ZW"],"showPhoneNumber":true,"billToShippingDefaultValue":false,"isPhoneNumberRequired":false},"checkoutType":"DONATE","commerceDisabled":false,"customCheckoutForm":{"id":"650a7c3d17d5eb3d0ba72513","name":"","items":[{"id":"text-040c2e2c-b767-4ce9-8c3f-2c9fd204f740","type":"text","title":"Employer","description":"","required":true,"placeholder":"","maxLength":0,"showCountryCode":false,"underlined":false},{"id":"text-5d4cd08c-6bac-4624-9fb1-b4d3d5ca99f5","type":"text","title":"Occupation","description":"","required":true,"placeholder":"","maxLength":0,"showCountryCode":false,"underlined":false},{"id":"checkbox-8c40a550-cc8c-4536-a438-ffef24058345","type":"checkbox","title":"Eligibility","description":"1. I am a U.S. citizen or lawfully admitted permanent resident (i.e., green card holder).\n\n2. This contribution is made from my own funds, and funds are not being provided to me by another person or entity for the purpose of making this contribution.\n\n3. I am at least eighteen years old.\n\n4. I am not a federal contractor.\n\nYour contribution (and/or payment of this credit charge) must come from your own personal funds, and not from funds provided by any other person or from any entity. Federal contractors and foreign nationals may not contribute to Fairshake.","required":true,"options":[{"label":"I affirm the contribution rules."}],"maxLength":0,"showCountryCode":false,"underlined":false}]},"designMode":false,"emailListOptInByDefault":false,"giftCardsEnabled":false,"hasPickupOptions":false,"hasShippingOptions":false,"isPaywallCheckout":false,"minimumOrderSubtotal":{"currency":"USD","value":"0.00"},"mustSavePaymentMethod":false,"paymentConfig":{"gatewayConnected":true,"testMode":false,"allowTestModePaymentOverride":false,"stripeConnected":true,"paypalConnected":false,"applePayEnabled":true,"linkEnabled":true,"paypalEnabled":true,"afterpayAvailable":false,"afterpayMinValueSubunits":100,"afterpayMaxValueSubunits":200000,"klarnaAvailable":false,"achAvailable":false,"sqspPaymentsAvailable":false,"trialMode":false,"storeCurrency":"USD","paymentAmountConstraints":{"minimum":{"currencyCode":"USD","value":50,"decimalValue":"0.50","fractionalDigits":2}},"acceptedPaymentCardTypes":["VISA","AMEX","DISCOVER","MASTERCARD"],"paypalSandbox":false},"purchaseType":"ONE_TIME_PURCHASE","reCaptchaEnabled":true,"shoppingCartSize":0,"showBillingAddressForm":true,"showEmailListSubscribeOption":true,"showGiftCodeInput":false,"showPromoCodeInput":false,"storePolicies":{},"submitEndpointEnabled":false,"subscriptionsEnabled":false,"userAccountsConfig":{"loginAllowed":false,"signupAllowed":false},"xsrfToken":"MXw2NTA5ZTg4MDBlZGFkOTc3MDFkMGYyNGE6MTcyODkzNjA5NjU4N3xvRThqTUFmTEhpUTBWR1dMRVFhalRkNXVoaDNDUmM3cWNVS1N4YnhKZzlCYjhmXzNLYXUwdFBNOWJqOEFaVmcy"},
-                "uiFeatureFlags": {"achEnabled":true,"achLowerLimitEnabled":false,"checkoutAATestEnabled":false,"fullStoryCountry":"US","fullStoryEnabled":false,"fullStoryRegion":"DC","modernizedCheckoutEnabled":true,"unifiedCheckoutEnabled":false}        }
-    </script>
+<div class="container">
+    <h1>Support Our Cause</h1>
+    <p>Your contributions help us make a difference. Every donation, big or small, counts!</p>
+    
+    <form class="donation-form" action="https://your-payment-gateway-url.com" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-      <!-- No "cookie-preferences-getter-header-script" found in context.. -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-      <!-- No "google-analytics-id" found in context. -->
+        <label for="amount">Donation Amount ($):</label>
+        <input type="number" id="amount" name="amount" min="1" required>
 
-      <!-- No "facebook-pixel-tag" found in context. -->
+        <button type="submit">Donate Now</button>
+    </form>
+</div>
 
-  <script defer src="https://assets.squarespace.com/commerce-checkout/errorReporter-9427a58bf5550f21a770-min.en-US.js"></script><script defer src="https://assets.squarespace.com/commerce-checkout/main-3e07927047ff4162fb40-min.en-US.js"></script><link href="https://assets.squarespace.com/commerce-checkout/main-a773f1f2abfaf257e9f3.css" rel="stylesheet"></head>
-  <body id="sqs-standard-checkout" class="checkout commerce-checkout show-site-logo header-alignment-center aureus">
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <div id="checkout"></div>
+<footer>
+    <p>Thank you for your support!</p>
+</footer>
 
-  </body>
-
+</body>
 </html>
